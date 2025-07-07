@@ -145,6 +145,7 @@ def application(environ, start_response):
         response = ''
     else:
         response = welcome
+        print('At the welcome page')
     start_response("200 OK", [
         ("Content-Type", "text/html"),
         ("Content-Length", str(len(response)))
